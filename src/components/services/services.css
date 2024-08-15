@@ -1,0 +1,63 @@
+.services {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.service-item {
+    border: 1px solid #7A90A4;
+    border-radius: 50px;
+    padding: 10px 21px;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.service-icon {
+    margin-right: 5px;
+}
+
+.service-item .bi-card-image {
+    color: #7A90A4;
+}
+
+.service-item .bi-prople-fill {
+    color: #344D59;
+}
+
+.service-item .bi-building {
+    color: var(--orange-color);
+}
+
+.service-item .bi-globe {
+    color: #344D59;
+}
+
+/* media Queries */
+@media(max-width: 920px) {
+    .service-item {
+        padding: 7px 17px;
+        font-size: 17px;
+    }
+}
+
+@media(max-width: 720px) {
+    .services {
+        flex-wrap: wrap;
+    }
+
+    .service-item {
+        padding: 10px 15px;
+        font-size: 20px;
+        width: 45%;
+        margin-bottom: 15px;
+    }
+}
+
+@media(max-width: 400px) {
+    .service-item {
+        font-size: 24px;
+        width: 90%;
+        text-align: center;
+    }
+}
