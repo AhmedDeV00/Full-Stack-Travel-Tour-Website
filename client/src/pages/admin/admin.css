@@ -1,0 +1,35 @@
+.muni-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #007BFF;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.muni-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.muni-nav a:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .muni-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .muni-nav a {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}

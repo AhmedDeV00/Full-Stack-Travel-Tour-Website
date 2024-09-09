@@ -1,0 +1,103 @@
+.delete {
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tour-item {
+    width: 28%;
+    margin: 25px 10px;
+    border-radius: 7px;
+    background-color: white;
+    position: relative;
+    transition: 0.3s;
+}
+
+.tour-item:hover {
+    background-color: #B8CBD0;
+    box-shadow: 0 0 1px 1px #7A90A4;
+}
+
+.tour-item-img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 7px 7px 0 0;
+}
+
+.tour-item-label {
+    position: absolute;
+    top: 190px;
+    left: 10px;
+    background-color: #344D59;
+    color: white;
+    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 7px;
+}
+
+.tour-item-body {
+    padding: 15px 10px;
+    color: #344D59;
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.tour-item-title {
+    font-weight: 700;
+    font-size: 21px;
+}
+
+.tour-item-duration {
+    margin: 15px 0;
+    font-weight: 600;
+}
+
+.tour-item-price {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    width: 100%;
+    color: #7A90A4;
+}
+
+
+button.delete {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+button.delete:hover {
+    background-color: #ff1a1a;
+}
+
+
+/* Media Queries*/
+@media (max-width: 980px) {
+    .tour-item {
+        width: 44%;
+    }
+}
+
+@media (max-width: 620px) {
+    .tour-item {
+        width: 90%;
+    }
+}
+
+@media (max-width: 420px) {
+    .tour-item {
+        width: 100%;
+    }
+}
