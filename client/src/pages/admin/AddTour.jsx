@@ -8,7 +8,7 @@ function AddTour() {
         try {
             const formData = new FormData();
             formData.append("image", file)
-            const res = await axios.post("http://localhost:3002/api/upload", formData);
+            const res = await axios.post("https://travel-tour-6xx0.onrender.com/api/upload", formData);
             return `/tours/${res.data}`;
         } catch (error) {
             console.log(error);
