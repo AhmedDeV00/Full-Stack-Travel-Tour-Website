@@ -4,7 +4,7 @@ import "./delete.css"
 
 const fetchTours = async () => {
     try {
-        const res = await axios.get("http://localhost:3002/api/AllTours", {
+        const res = await axios.get("https://travel-tour-6xx0.onrender.com/api/AllTours", {
             withCredentials: true,
         });
         console.log("API response:", res.data); // Log the entire response
@@ -23,7 +23,7 @@ const fetchTours = async () => {
 };
 
 const deleteTour = async (id) => {
-    await axios.delete(`http://localhost:3002/api/delete-tour/${id}`, {
+    await axios.delete(`https://travel-tour-6xx0.onrender.com/api/delete-tour/${id}`, {
         withCredentials: true,
     });
 };
