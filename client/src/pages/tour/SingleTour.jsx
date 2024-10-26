@@ -11,7 +11,7 @@ function SingleTour() {
     const { id } = useParams();
 
     const fetchTour = async () => {
-        const { data } = await axios.get(`http://localhost:3002/api/tours/${id}`);
+        const { data } = await axios.get(`https://travel-tour-6xx0.onrender.com/api/tours/${id}`);
         return data;
     };
 
