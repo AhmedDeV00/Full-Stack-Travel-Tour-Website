@@ -1,6 +1,7 @@
-import bcrypt from 'bcrypt';
+import bcrypt from "bcryptjs"
 import jwt from 'jsonwebtoken';
 import User from '../models/User.js';
+import 'dotenv/config'
 
 // Register a New User
 
@@ -38,7 +39,7 @@ export const loginUser = async (req, res) => {
         if (!isMatch) {
             return res.status(400).json("Email Or Password Invalid!")
         }
-        const token = jwt.sign({ id: user.id, role: user.role }, "secretkey");
+        const token = jwt.sign({ id: user.id, role: user.role }, process.env.JWT_KEY);
         res.cookie("token", token,
             { httpOnly: true },);
         res.status(200).json(user);

@@ -7,6 +7,8 @@ import tourRoutes from "./router/tour.js"
 import adminRoutes from "./router/admin.js"
 import multer from "multer";
 import Tour from "./models/TourList.js";
+import 'dotenv/config'
+
 
 const app = express();
 app.use(express.json());
@@ -59,6 +61,6 @@ app.use("/api", tourRoutes)
 app.use("/api", adminRoutes)
 
 
-app.listen(3002, () => {
-    console.log("server is running!");
+app.listen(process.env.PORT, () => {
+    console.log("server is running:", process.env.PORT);
 })

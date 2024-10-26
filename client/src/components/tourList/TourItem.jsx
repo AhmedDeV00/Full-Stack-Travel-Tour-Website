@@ -3,7 +3,6 @@ import Rating from './Rating'
 import "./tourList.css"
 import { Link } from "react-router-dom"
 function TourItem({ item }) {
-    console.log(item.image);
     return (
 
         <div className='tour-item'>
