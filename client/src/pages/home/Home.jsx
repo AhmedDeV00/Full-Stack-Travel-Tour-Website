@@ -22,7 +22,7 @@ function Home() {
     // Fetch function with pagination
     const fetchTours = async ({ queryKey }) => {
         const [{ page = currentPage, limit = TOURS_PER_PAGE }] = queryKey;
-        const { data } = await axios.get(`http://localhost:3002/api/tours?page=${page}&limit=${limit}`);
+        const { data } = await axios.get(`https://travel-tour-6xx0.onrender.com/api/tours?page=${page}&limit=${limit}`);
         console.log(data);
         return data;
     };
