@@ -5,7 +5,7 @@ import "./user.css";
 function FetchUser() {
 
     const fetchUsers = async () => {
-        const res = await axios.get("http://localhost:3002/api/users", {
+        const res = await axios.get("https://travel-tour-6xx0.onrender.com/api/users", {
             withCredentials: true,
         });
         return res.data;
