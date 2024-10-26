@@ -23,7 +23,7 @@ function Register() {
     const handleClick = async (e) => {
         e.preventDefault();
         try {
-            await axios.post("http://localhost:3002/api/auth/register", formData)
+            await axios.post("https://travel-tour-6xx0.onrender.com/api/auth/register", formData)
             navigate("/login");
         } catch (error) {
             console.log(error);
