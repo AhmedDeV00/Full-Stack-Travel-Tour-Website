@@ -11,7 +11,7 @@ export const AuthContextProvider = ({ children }) => {
     );
     const Login = async (FormData) => {
         try {
-            const res = await axios.post("http://localhost:3002/api/auth/login", FormData, {
+            const res = await axios.post("https://travel-tour-6xx0.onrender.com/api/auth/login", FormData, {
                 withCredentials: true,
             });
             //console.log(res);
